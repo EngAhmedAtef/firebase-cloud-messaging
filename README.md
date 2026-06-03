@@ -11,16 +11,15 @@ The SDK calls the FCM HTTP v1 endpoint directly — it does **not** depend on th
 
 ## Architecture
 
-The SDK follows a layered, reactive architecture with clear separation between:
+The SDK is designed around a reactive, pipeline-based architecture optimized for high-throughput batch delivery.
 
-- API layer (`FcmClient`, `ReactiveFcmClient`)
-- Core orchestration pipeline (validation → enrichment → interception → send → retry)
-- Transport layer (`WebClient` + Firebase HTTP v1)
-- Observability layer (Micrometer + Observation API)
-- Extension SPI system (validators, interceptors, retry policies, etc.)
+Key design goals:
+- Per-device fault isolation
+- Fully non-blocking execution model
+- Pluggable extension points (SPI-based)
+- Production-grade observability
 
-👉 Full architecture documentation is available here:  
-[Architecture Overview](./ARCHITECTURE.md)
+Full design details: [Architecture Overview](./ARCHITECTURE.md)
 
 ---
 
