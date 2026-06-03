@@ -1,23 +1,24 @@
-com:
-  gizasystems:
-    fcm:
-      project-id: test-project
-      auth:
-        credentials:
-          type: APPLICATION_DEFAULT
-          scope: https://www.googleapis.com/auth/firebase.messaging
-      send:
-        base-url: http://localhost:${wiremock.port:8080}
-        max-retries: 2
-        base-backoff-millis: 10
-        max-backoff-millis: 100
-        concurrency: 4
-        batch-size: 10
-        failure-threshold-per-batch: 0.5
-      http:
-        connect-timeout-millis: 5000
-        response-timeout-millis: 10000
-        max-in-memory-size-mb: 10
-      topic:
-        subscribe-url: http://localhost:${wiremock.port:8080}/iid/v1:batchAdd
-        unsubscribe-url: http://localhost:${wiremock.port:8080}/iid/v1:batchRemove
+io:
+  github:
+    engahmedatef:
+      fcm:
+        project-id: test-project
+        auth:
+          credentials:
+            type: APPLICATION_DEFAULT
+            scope: https://www.googleapis.com/auth/firebase.messaging
+        send:
+          base-url: http://localhost:${wiremock.port:8080}
+          max-retries: 2
+          base-backoff-millis: 10
+          max-backoff-millis: 100
+          concurrency: 4
+          batch-size: 10
+          failure-threshold-per-batch: 0.5
+        http:
+          connect-timeout-millis: 5000
+          response-timeout-millis: 10000
+          max-in-memory-size-mb: 10
+        topic:
+          subscribe-url: http://localhost:${wiremock.port:8080}/iid/v1:batchAdd
+          unsubscribe-url: http://localhost:${wiremock.port:8080}/iid/v1:batchRemove

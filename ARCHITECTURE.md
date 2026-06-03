@@ -17,7 +17,7 @@ This document describes the internal design of the `firebase-cloud-messaging` SD
 ## Package Structure
 
 ```
-com.gizasystems.fcm
+io.github.engahmedatef.fcm
 ├── api                     Public send interfaces (FcmClient, ReactiveFcmClient, FcmTokenService)
 ├── model                   Public domain models (FcmMessage, FcmDevice, FcmNotification, FcmSendResult)
 │   ├── android             Android-specific models

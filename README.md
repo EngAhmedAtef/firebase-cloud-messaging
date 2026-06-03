@@ -55,7 +55,7 @@ Full design details: [Architecture Overview](./ARCHITECTURE.md)
 
 ```xml
 <dependency>
-    <groupId>com.github.engahmedatef</groupId>
+    <groupId>io.github.engahmedatef</groupId>
     <artifactId>firebase-cloud-messaging</artifactId>
     <version>1.0.0</version>
 </dependency>
@@ -64,7 +64,7 @@ Full design details: [Architecture Overview](./ARCHITECTURE.md)
 **Gradle**
 
 ```groovy
-implementation 'com.github.engahmedatef:firebase-cloud-messaging:1.0.0'
+implementation 'io.github.engahmedatef:firebase-cloud-messaging:1.0.0'
 ```
 
 ---

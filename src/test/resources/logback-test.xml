@@ -5,7 +5,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.github.engahmedatef.fcm" level="DEBUG"/>
+    <logger name="io.github.engahmedatef.fcm" level="DEBUG"/>
     <logger name="reactor.netty" level="WARN"/>
     <logger name="org.springframework" level="WARN"/>
 

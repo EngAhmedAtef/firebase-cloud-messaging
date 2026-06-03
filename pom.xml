@@ -12,7 +12,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.github.engahmedatef</groupId>
+    <groupId>io.github.engahmedatef</groupId>
     <artifactId>firebase-cloud-messaging</artifactId>
     <version>1.0.0</version>
 
@@ -197,8 +197,8 @@
                                 <rule>
                                     <element>PACKAGE</element>
                                     <includes>
-                                        <include>com.github.engahmedatef.fcm.internal.service</include>
-                                        <include>com.github.engahmedatef.fcm.internal.auth</include>
+                                        <include>io.github.engahmedatef.fcm.internal.service</include>
+                                        <include>io.github.engahmedatef.fcm.internal.auth</include>
                                     </includes>
                                     <limits>
                                         <limit>
