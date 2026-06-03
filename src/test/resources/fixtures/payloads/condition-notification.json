@@ -1,0 +1,10 @@
+{
+  "message": {
+    "condition": "'TopicA' in topics && 'TopicB' in topics",
+    "notification": {
+      "title": "Test Title",
+      "body": "Test Body"
+    },
+    "data": {}
+  }
+}

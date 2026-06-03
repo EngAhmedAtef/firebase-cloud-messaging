@@ -1,0 +1,12 @@
+{
+  "message": {
+    "token": "device-token-abc123",
+    "apns": {
+      "payload": {
+        "aps": {
+          "badge": 1
+        }
+      }
+    }
+  }
+}

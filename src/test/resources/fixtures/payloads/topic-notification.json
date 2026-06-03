@@ -1,0 +1,10 @@
+{
+  "message": {
+    "topic": "news",
+    "notification": {
+      "title": "Test Title",
+      "body": "Test Body"
+    },
+    "data": {}
+  }
+}

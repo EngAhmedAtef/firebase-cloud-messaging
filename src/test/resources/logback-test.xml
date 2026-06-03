@@ -1,0 +1,15 @@
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} [fcmId=%X{fcmId}] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.github.engahmedatef.fcm" level="DEBUG"/>
+    <logger name="reactor.netty" level="WARN"/>
+    <logger name="org.springframework" level="WARN"/>
+
+    <root level="WARN">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

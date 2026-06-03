@@ -1,0 +1,27 @@
+{
+  "message": {
+    "token": "device-token-abc123",
+    "notification": {
+      "title": "Test Title",
+      "body": "Test Body"
+    },
+    "data": {},
+    "android": {
+      "priority": "high",
+      "ttl": "PT1H",
+      "collapseKey": "collapse-key",
+      "restrictedPackageName": "com.example.app",
+      "data": {},
+      "notification": {
+        "title": "Android Title",
+        "body": "Android Body",
+        "icon": "ic_notification",
+        "color": "#FF0000",
+        "sound": "default",
+        "channelId": "default-channel",
+        "image": "https://example.com/image.png",
+        "clickAction": "OPEN_ACTIVITY"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "message": {
+    "token": "device-token-abc123",
+    "notification": {
+      "title": "Test Title",
+      "body": "Test Body"
+    },
+    "data": {},
+    "apns": {
+      "headers": {},
+      "payload": {
+        "aps": {
+          "alert": {
+            "title": "APNs Title",
+            "body": "APNs Body"
+          },
+          "badge": 5,
+          "sound": "default",
+          "content-available": 1,
+          "mutable-content": 1
+        }
+      }
+    }
+  }
+}
