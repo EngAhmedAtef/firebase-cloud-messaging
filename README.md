@@ -1,3 +1,8 @@
+![Java](https://img.shields.io/badge/java-17-blue)
+![Spring Boot](https://img.shields.io/badge/spring%20boot-3.x-green)
+![License](https://img.shields.io/badge/license-Apache%202.0-blue)
+![Release](https://img.shields.io/badge/version-1.0.0-orange)
+
 # firebase-cloud-messaging
 
 A production-grade Spring Boot SDK for sending push notifications through the **Firebase Cloud Messaging (FCM) HTTP v1 API**. The library is built on Project Reactor, exposes both reactive and blocking APIs, and is designed to handle high-throughput batch notification delivery with per-device fault isolation, automatic retries, and first-class observability.
