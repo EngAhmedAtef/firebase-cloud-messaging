@@ -37,6 +37,7 @@ public class FcmAps {
      */
     private boolean mutableContent;
 
+    /** Returns a deep copy of {@code source}. */
     public static FcmAps copyOf(FcmAps source) {
         return FcmAps.builder()
                 .alert(source.getAlert() == null ? null : FcmAlert.copyOf(source.getAlert()))

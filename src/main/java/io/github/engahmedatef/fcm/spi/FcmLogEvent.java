@@ -4,7 +4,7 @@ import lombok.Getter;
 
 /**
  * Structured log event constants emitted by the SDK to {@link FcmLogger}.
- * Each constant has a {@link #getValue()} that returns the event name as a dot-separated string.
+ * Each constant exposes a {@code getValue()} method that returns the event name as a dot-separated string.
  */
 @Getter
 public enum FcmLogEvent {

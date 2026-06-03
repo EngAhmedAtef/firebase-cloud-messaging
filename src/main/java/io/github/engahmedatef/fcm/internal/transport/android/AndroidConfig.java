@@ -10,6 +10,7 @@ import java.util.Map;
 @Data
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
+/** Internal transport model for the FCM HTTP v1 {@code android} object. */
 public class AndroidConfig {
     private String collapseKey;
     private AndroidMessagePriority priority;

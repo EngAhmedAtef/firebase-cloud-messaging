@@ -8,6 +8,7 @@ import lombok.Data;
 @Data
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
+/** Internal transport model for the APNs {@code aps} dictionary forwarded by FCM. */
 public class Aps {
     private Alert alert;
     private Integer badge;

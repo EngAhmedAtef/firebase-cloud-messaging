@@ -7,6 +7,7 @@ import org.slf4j.MDC;
 
 import java.util.Map;
 
+/** SLF4J-backed {@link io.github.engahmedatef.fcm.spi.FcmLogger} that writes FCM log events using MDC for structured metadata. */
 @Slf4j
 public class DefaultFcmLogger implements FcmLogger {
 

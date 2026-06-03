@@ -40,6 +40,7 @@ public class FcmAndroidConfig {
     @Builder.Default
     private Map<String, String> data = new HashMap<>();
 
+    /** Returns a deep copy of {@code source}. */
     public static FcmAndroidConfig copyOf(FcmAndroidConfig source) {
         return FcmAndroidConfig.builder()
                 .collapseKey(source.getCollapseKey())

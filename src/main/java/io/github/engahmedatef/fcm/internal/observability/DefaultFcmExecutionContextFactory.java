@@ -10,6 +10,7 @@ import io.micrometer.observation.Observation;
 import io.micrometer.observation.ObservationRegistry;
 import lombok.AllArgsConstructor;
 
+/** Default factory that builds {@link FcmExecutionContext} instances wired to a Micrometer {@link io.micrometer.observation.Observation}. */
 @AllArgsConstructor
 public class DefaultFcmExecutionContextFactory implements FcmExecutionContextFactory {
 

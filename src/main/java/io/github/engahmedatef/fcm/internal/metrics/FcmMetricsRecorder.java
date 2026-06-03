@@ -4,6 +4,7 @@ import io.github.engahmedatef.fcm.internal.observability.FcmExecutionContext;
 
 import java.time.Duration;
 
+/** Internal SPI for recording FCM metrics via Micrometer or a no-op fallback. */
 public interface FcmMetricsRecorder {
 
     void increment(String metric, FcmExecutionContext context);

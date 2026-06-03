@@ -6,7 +6,7 @@ package io.github.engahmedatef.fcm.internal.metrics;
  * <p>All metric names follow the dot-separated convention {@code fcm.*}.
  * Instrument names are stable across releases; tag keys are listed in the nested {@link Tags} class.
  *
- * <h3>Counters</h3>
+ * <h2>Counters</h2>
  * <ul>
  *   <li>{@link #MESSAGES_SENT} — total send attempts, tagged by {@code outcome} (success/failure)</li>
  *   <li>{@link #MESSAGES_RETRIED} — individual retry attempts</li>
@@ -16,13 +16,13 @@ package io.github.engahmedatef.fcm.internal.metrics;
  *   <li>{@link #TOKEN_REFRESH} — OAuth token refresh events</li>
  * </ul>
  *
- * <h3>Timers</h3>
+ * <h2>Timers</h2>
  * <ul>
  *   <li>{@link #MESSAGES_DURATION} — end-to-end latency per send (including retries)</li>
  *   <li>{@link #TOKEN_REFRESH_DURATION} — time to obtain a fresh OAuth token</li>
  * </ul>
  *
- * <h3>Distribution Summaries</h3>
+ * <h2>Distribution Summaries</h2>
  * <ul>
  *   <li>{@link #BATCH_SIZE} — number of devices per batch window</li>
  *   <li>{@link #BATCH_FAILURE_RATE} — fraction of failures within a batch window [0.0 – 1.0]</li>

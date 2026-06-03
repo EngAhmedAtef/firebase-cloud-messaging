@@ -7,6 +7,7 @@ import lombok.Data;
 @Data
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
+/** Internal transport model for the FCM HTTP v1 {@code android.notification} object. */
 public class AndroidNotification {
     private String title;
     private String body;

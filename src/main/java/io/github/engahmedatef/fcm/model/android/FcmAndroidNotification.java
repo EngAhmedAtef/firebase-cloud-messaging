@@ -33,6 +33,7 @@ public class FcmAndroidNotification {
     /** Activity class name to start when the notification is tapped. */
     private String clickAction;
 
+    /** Returns a deep copy of {@code source}. */
     public static FcmAndroidNotification copyOf(FcmAndroidNotification source) {
         return FcmAndroidNotification.builder()
                 .title(source.getTitle())

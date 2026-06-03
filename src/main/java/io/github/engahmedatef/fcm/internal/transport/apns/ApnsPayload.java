@@ -7,6 +7,7 @@ import lombok.Data;
 @Data
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
+/** Internal transport model wrapping the APNs {@code aps} payload object. */
 public class ApnsPayload {
     private Aps aps;
 

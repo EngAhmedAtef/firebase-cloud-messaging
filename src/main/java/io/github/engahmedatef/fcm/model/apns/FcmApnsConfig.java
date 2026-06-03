@@ -29,6 +29,7 @@ public class FcmApnsConfig {
     /** APNs payload dictionary containing alert, badge, and sound overrides. */
     private FcmAps aps;
 
+    /** Returns a deep copy of {@code source}. */
     public static FcmApnsConfig copyOf(FcmApnsConfig source) {
         return FcmApnsConfig.builder()
                 .headers(source.getHeaders() == null ? new HashMap<>() : new HashMap<>(source.getHeaders()))

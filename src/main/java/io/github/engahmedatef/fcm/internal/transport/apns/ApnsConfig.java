@@ -10,6 +10,7 @@ import java.util.Map;
 @Data
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
+/** Internal transport model for the FCM HTTP v1 {@code apns} object. */
 public class ApnsConfig {
     private Map<String, String> headers;
     private ApnsPayload payload;

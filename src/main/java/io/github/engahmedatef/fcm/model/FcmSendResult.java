@@ -7,10 +7,10 @@ import lombok.ToString;
 /**
  * Immutable result of a single-device or single-topic send operation.
  *
- * <p>On success, {@link #getMessageId()} returns the FCM-assigned message name in the format
+ * <p>On success, {@code getMessageId()} returns the FCM-assigned message name in the format
  * {@code projects/{project_id}/messages/{message_id}}.
  *
- * <p>On failure (non-exception path), {@link #getError()} contains the typed
+ * <p>On failure (non-exception path), {@code getError()} contains the typed
  * {@link FcmException} subtype. In batch operations the SDK catches per-device failures and
  * wraps them in a {@code FcmSendResult} rather than terminating the reactive stream, so callers
  * can inspect individual outcomes after the batch completes.

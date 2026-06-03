@@ -7,10 +7,15 @@ package io.github.engahmedatef.fcm.exception;
  */
 public class FcmAuthenticationException extends FcmException {
 
+    /** @param message description of the authentication failure */
     public FcmAuthenticationException(String message) {
         super(message);
     }
 
+    /**
+     * @param message description of the authentication failure
+     * @param cause   the underlying cause
+     */
     public FcmAuthenticationException(String message, Throwable cause) {
         super(message, cause);
     }

@@ -23,6 +23,7 @@ import java.util.Optional;
 import static io.github.engahmedatef.fcm.internal.transport.FcmSendErrorResponse.FcmErrorCodes.SENDER_ID_MISMATCH;
 import static io.github.engahmedatef.fcm.internal.transport.FcmSendErrorResponse.FcmErrorCodes.UNREGISTERED;
 
+/** Handles FCM error responses; removes stale device tokens when {@link io.github.engahmedatef.fcm.api.FcmTokenService} is configured. */
 @AllArgsConstructor
 public class DefaultFcmResponseErrorHandler implements FcmResponseErrorHandler {
     private final FcmTokenService tokenService;

@@ -7,6 +7,7 @@ import reactor.core.publisher.Mono;
 
 import java.util.List;
 
+/** Applies registered {@link io.github.engahmedatef.fcm.spi.FcmMessageEnricher} beans in order to a message before it is sent. */
 public class EnricherChain {
     private final List<FcmMessageEnricher> enrichers;
     private final boolean enabled;

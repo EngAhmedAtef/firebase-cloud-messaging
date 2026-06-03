@@ -9,6 +9,7 @@ import lombok.AllArgsConstructor;
 
 import java.util.Collection;
 
+/** Blocking {@link io.github.engahmedatef.fcm.api.FcmClient} that wraps {@link io.github.engahmedatef.fcm.api.ReactiveFcmClient} via {@code block()}. */
 @AllArgsConstructor
 public class DefaultFcmClient implements FcmClient {
     private final ReactiveFcmClient reactiveFcmClient;

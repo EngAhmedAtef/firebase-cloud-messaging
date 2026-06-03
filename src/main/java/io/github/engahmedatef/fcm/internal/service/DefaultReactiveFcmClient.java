@@ -27,6 +27,7 @@ import reactor.core.publisher.SignalType;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
 
+/** Primary reactive FCM client implementation: validates, enriches, intercepts, sends, retries, and records metrics per send. */
 @AllArgsConstructor
 public class DefaultReactiveFcmClient implements ReactiveFcmClient {
     private final FcmPayloadBuilder payloadBuilder;

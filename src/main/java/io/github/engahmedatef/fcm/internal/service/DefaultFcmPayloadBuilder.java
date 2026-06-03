@@ -9,6 +9,7 @@ import io.github.engahmedatef.fcm.model.FcmDevice;
 import io.github.engahmedatef.fcm.model.FcmMessage;
 import io.github.engahmedatef.fcm.spi.FcmPayloadBuilder;
 
+/** Builds a {@link io.github.engahmedatef.fcm.internal.transport.MessagePayload} from a target and {@link io.github.engahmedatef.fcm.model.FcmMessage}. */
 public class DefaultFcmPayloadBuilder implements FcmPayloadBuilder {
 
     @Override

@@ -11,6 +11,7 @@ import org.springframework.core.io.ResourceLoader;
 import java.io.IOException;
 import java.io.InputStream;
 
+/** Resolves {@link com.google.auth.oauth2.GoogleCredentials} from {@link io.github.engahmedatef.fcm.autoconfigure.FcmProperties.Credentials}. */
 public class CredentialResolver {
 
     private final ResourceLoader resourceLoader;

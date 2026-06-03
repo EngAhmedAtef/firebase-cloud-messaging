@@ -1,5 +1,6 @@
 package io.github.engahmedatef.fcm.internal.observability;
 
+/** Manages the lifecycle of a send observation: start, success, failure, retry, cancel, stop. */
 public interface ObservationManager {
 
     void start(FcmExecutionContext context);

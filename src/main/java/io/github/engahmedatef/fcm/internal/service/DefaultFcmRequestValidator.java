@@ -13,6 +13,7 @@ import reactor.core.publisher.Mono;
 
 import java.util.regex.Pattern;
 
+/** Default validator: checks device token, topic name, condition syntax, and APNs badge value. */
 public class DefaultFcmRequestValidator implements FcmRequestValidator {
     private static final Pattern TOPIC_PATTERN = Pattern.compile("^[a-zA-Z0-9\\-_.~%]{1,900}$");
 

@@ -39,6 +39,12 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
 
+/**
+ * Spring Boot auto-configuration for the FCM SDK.
+ * Activated when the {@code io.github.engahmedatef.fcm.project-id} property is set.
+ * Registers all default beans (credentials, token provider, retry policy, reactive client, etc.)
+ * and backs off whenever the application supplies a custom bean of the same type.
+ */
 @AutoConfiguration
 @ConditionalOnProperty("io.github.engahmedatef.fcm.project-id")
 @EnableConfigurationProperties(FcmProperties.class)

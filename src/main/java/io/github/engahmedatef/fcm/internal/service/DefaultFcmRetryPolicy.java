@@ -15,6 +15,7 @@ import reactor.util.retry.Retry;
 import java.time.Duration;
 import java.util.Map;
 
+/** Exponential back-off retry policy with jitter; retries on {@link io.github.engahmedatef.fcm.exception.FcmRetryableException} and network errors. */
 @AllArgsConstructor
 public class DefaultFcmRetryPolicy implements FcmRetryPolicy {
     private final int maxRetries;

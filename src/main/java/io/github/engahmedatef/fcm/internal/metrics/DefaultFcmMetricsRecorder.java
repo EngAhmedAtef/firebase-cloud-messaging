@@ -9,6 +9,7 @@ import lombok.AllArgsConstructor;
 
 import java.time.Duration;
 
+/** Micrometer-backed implementation of {@link FcmMetricsRecorder}. */
 @AllArgsConstructor
 public class DefaultFcmMetricsRecorder implements FcmMetricsRecorder {
 

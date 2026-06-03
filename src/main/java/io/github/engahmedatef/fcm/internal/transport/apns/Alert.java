@@ -7,6 +7,7 @@ import lombok.Data;
 @Data
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
+/** Internal transport model for the APNs {@code alert} dictionary sent via FCM. */
 public class Alert {
     private String title;
     private String body;

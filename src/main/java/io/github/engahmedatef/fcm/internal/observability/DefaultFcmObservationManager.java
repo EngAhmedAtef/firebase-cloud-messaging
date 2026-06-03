@@ -3,6 +3,7 @@ package io.github.engahmedatef.fcm.internal.observability;
 import io.github.engahmedatef.fcm.internal.metrics.FcmMetrics;
 import io.micrometer.observation.Observation;
 
+/** Default {@link ObservationManager} that delegates lifecycle events to Micrometer {@link io.micrometer.observation.Observation}. */
 public class DefaultFcmObservationManager implements ObservationManager {
 
     @Override

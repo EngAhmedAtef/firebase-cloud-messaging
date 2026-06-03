@@ -21,6 +21,7 @@ public class FcmAlert {
     /** The alert body text displayed below the title. */
     private String body;
 
+    /** Returns a deep copy of {@code source}. */
     public static FcmAlert copyOf(FcmAlert source) {
         return FcmAlert.builder()
                 .title(source.getTitle())
