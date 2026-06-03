@@ -2,6 +2,7 @@
 ![Spring Boot](https://img.shields.io/badge/spring%20boot-3.x-green)
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue)
 ![Release](https://img.shields.io/badge/version-1.0.0-orange)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.engahmedatef/firebase-cloud-messaging.svg)](https://central.sonatype.com/artifact/io.github.engahmedatef/firebase-cloud-messaging)
 
 # firebase-cloud-messaging
 
@@ -20,6 +21,8 @@ Key design goals:
 - Production-grade observability
 
 Full design details: [Architecture Overview](./ARCHITECTURE.md)
+
+Release Notes: [Release Notes](https://github.com/EngAhmedAtef/firebase-cloud-messaging/releases)
 
 ---
 
