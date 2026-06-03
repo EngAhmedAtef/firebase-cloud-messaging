@@ -9,6 +9,19 @@ A production-grade Spring Boot SDK for sending push notifications through the **
 
 The SDK calls the FCM HTTP v1 endpoint directly — it does **not** depend on the Firebase Admin SDK — keeping the dependency footprint small and the reactive pipeline unblocked.
 
+## Architecture
+
+The SDK follows a layered, reactive architecture with clear separation between:
+
+- API layer (`FcmClient`, `ReactiveFcmClient`)
+- Core orchestration pipeline (validation → enrichment → interception → send → retry)
+- Transport layer (`WebClient` + Firebase HTTP v1)
+- Observability layer (Micrometer + Observation API)
+- Extension SPI system (validators, interceptors, retry policies, etc.)
+
+👉 Full architecture documentation is available here:  
+[Architecture Overview](./ARCHITECTURE.md)
+
 ---
 
 ## Key Features
