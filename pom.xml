@@ -14,7 +14,7 @@
 
     <groupId>io.github.engahmedatef</groupId>
     <artifactId>firebase-cloud-messaging</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <name>firebase-cloud-messaging</name>
     <description>A reactive/blocking Firebase Messaging SDK built on Spring WebFlux.</description>
@@ -36,13 +36,14 @@
 
     <properties>
         <java.version>17</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <lombok.version>1.18.36</lombok.version>
-        <google-auth-oauth2.version>1.37.1</google-auth-oauth2.version>
+        <lombok.version>1.18.46</lombok.version>
+        <google-auth-oauth2.version>1.47.0</google-auth-oauth2.version>
 
-        <wiremock.version>3.13.0</wiremock.version>
-        <awaitility.version>4.2.2</awaitility.version>
-        <json-unit.version>3.5.0</json-unit.version>
+        <wiremock.version>3.13.2</wiremock.version>
+        <awaitility.version>4.3.0</awaitility.version>
+        <json-unit.version>5.1.2</json-unit.version>
     </properties>
 
     <dependencies>
@@ -85,13 +86,11 @@
         <dependency>
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-observation</artifactId>
-            <optional>true</optional>
         </dependency>
 
         <dependency>
             <groupId>io.micrometer</groupId>
             <artifactId>context-propagation</artifactId>
-            <optional>true</optional>
         </dependency>
 
         <!-- TEST -->
@@ -138,6 +137,14 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
                 <version>0.10.0</version>
@@ -169,7 +176,7 @@
                 <version>3.3.1</version>
                 <executions>
                     <execution>
-                        <id>attach-javadocs</id>
+                        <id>attach-sources</id>
                         <goals>
                             <goal>jar</goal>
                         </goals>
@@ -232,7 +239,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.12</version>
+                <version>0.8.14</version>
                 <configuration>
                     <excludes>
                         <exclude>**/*$*.class</exclude>

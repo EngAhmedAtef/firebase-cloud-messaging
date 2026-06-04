@@ -46,7 +46,7 @@ import java.util.stream.Collectors;
  * and backs off whenever the application supplies a custom bean of the same type.
  */
 @AutoConfiguration
-@ConditionalOnProperty("io.github.engahmedatef.fcm.project-id")
+@ConditionalOnProperty("fcm.project-id")
 @EnableConfigurationProperties(FcmProperties.class)
 public class FcmAutoConfiguration {
     public static final String FCM_WEB_CLIENT_QUALIFIER = "fcmWebClient";

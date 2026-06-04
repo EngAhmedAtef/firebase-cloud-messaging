@@ -27,7 +27,7 @@ class FcmAutoConfigurationTest {
     @Test
     void wiresFullBeanGraphWhenProjectIdSet() {
         contextRunner
-                .withPropertyValues("io.github.engahmedatef.fcm.project-id=test-project")
+                .withPropertyValues("fcm.project-id=test-project")
                 .withBean(FcmAccessTokenProvider.class, FakeAccessTokenProvider::new)
                 .run(ctx -> {
                     assertThat(ctx).hasSingleBean(ReactiveFcmClient.class);
@@ -45,8 +45,8 @@ class FcmAutoConfigurationTest {
     void customMaxRetriesBindsToRetryPolicy() {
         contextRunner
                 .withPropertyValues(
-                        "io.github.engahmedatef.fcm.project-id=test-project",
-                        "io.github.engahmedatef.fcm.send.max-retries=7"
+                        "fcm.project-id=test-project",
+                        "fcm.send.max-retries=7"
                 )
                 .withBean(FcmAccessTokenProvider.class, FakeAccessTokenProvider::new)
                 .run(ctx -> {

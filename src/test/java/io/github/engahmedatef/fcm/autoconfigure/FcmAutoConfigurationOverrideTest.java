@@ -32,7 +32,7 @@ class FcmAutoConfigurationOverrideTest {
 
     private final ApplicationContextRunner contextRunner = new ApplicationContextRunner()
             .withUserConfiguration(FcmAutoConfiguration.class)
-            .withPropertyValues("io.github.engahmedatef.fcm.project-id=test-project")
+            .withPropertyValues("fcm.project-id=test-project")
             .withBean(FcmAccessTokenProvider.class, FakeAccessTokenProvider::new);
 
     @Test
@@ -156,7 +156,7 @@ class FcmAutoConfigurationOverrideTest {
     @Test
     void validationDisabledMakesChainSkipValidators() {
         contextRunner
-                .withPropertyValues("io.github.engahmedatef.fcm.validation.enabled=false")
+                .withPropertyValues("fcm.validation.enabled=false")
                 .run(ctx -> {
                     ValidatorChain chain = ctx.getBean(ValidatorChain.class);
                     StepVerifier.create(chain.apply(
@@ -187,14 +187,14 @@ class FcmAutoConfigurationOverrideTest {
     @Test
     void correlationDisabledContextStillLoads() {
         contextRunner
-                .withPropertyValues("io.github.engahmedatef.fcm.observability.correlation-enabled=false")
+                .withPropertyValues("fcm.observability.correlation-enabled=false")
                 .run(ctx -> assertThat(ctx).hasSingleBean(ReactiveFcmClient.class));
     }
 
     @Test
     void tracingDisabledContextStillLoads() {
         contextRunner
-                .withPropertyValues("io.github.engahmedatef.fcm.observability.tracing-enabled=false")
+                .withPropertyValues("fcm.observability.tracing-enabled=false")
                 .run(ctx -> assertThat(ctx).hasSingleBean(ReactiveFcmClient.class));
     }
 }

@@ -1,1 +1,1 @@
-﻿org.springframework.boot.env.EnvironmentPostProcessor=io.github.engahmedatef.fcm.autoconfigure.FcmEnvironmentPostProcessor
+org.springframework.boot.env.EnvironmentPostProcessor=io.github.engahmedatef.fcm.autoconfigure.FcmEnvironmentPostProcessor

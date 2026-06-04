@@ -9,9 +9,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.validation.annotation.Validated;
 
 /**
- * Externalized configuration for the FCM SDK, bound to the prefix {@code io.github.engahmedatef.fcm}.
+ * Externalized configuration for the FCM SDK, bound to the prefix {@code fcm}.
  *
- * <p>The library is activated only when {@code io.github.engahmedatef.fcm.project-id} is set.
+ * <p>The library is activated only when {@code fcm.project-id} is set.
  * All other properties have production-safe defaults and are fully overridable.
  *
  * <p>Nested groups:
@@ -27,7 +27,7 @@ import org.springframework.validation.annotation.Validated;
 @Getter
 @Setter
 @Validated
-@ConfigurationProperties(prefix = "io.github.engahmedatef.fcm")
+@ConfigurationProperties(prefix = "fcm")
 public class FcmProperties {
 
     private String projectId;
